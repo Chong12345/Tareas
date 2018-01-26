@@ -9,9 +9,12 @@
          width: 500px;
          height: 500px;
          background-color: beige;
-         position: relative;
+         position: fixed;
          top: 50%;
          left: 50%;
+		 margin-left: -250px;
+         margin-top: -250px;
+	
           
        }
        div:first-child
@@ -47,6 +50,11 @@
          position: absolute;
          bottom: 0px; right: 0px;
        }
+	    
+	   #parent:hover div:nth-child(1),#parent:hover div:nth-child(2),#parent:hover div:nth-child(3),#parent:hover div:nth-child(4){
+	   position: fixed;
+	   }
+	  
        </style>
   </head>
   <body>
