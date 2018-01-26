@@ -3,19 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-  </head>
-  <body>
-       <style media="screen">
-
-
-       div
+	<style media="screen">
+       #parent
        {
          width: 500px;
          height: 500px;
          background-color: beige;
          position: relative;
-           top: 50%;
-           left: 50%;
+         top: 50%;
+         left: 50%;
           
        }
        div:first-child
@@ -23,63 +19,53 @@
          background-color: orange;
          width: 170px;
          height: 170px;
-         position: relative;
-         top: 0%; left: 0%;
-         transform: translate(-50,-50);
-
-
+         position: absolute;
+         top: 0%; 
+		 left: 0%;
        }
-       div:first-child(2)
+       div:nth-child(2)
        {
          background-color: green;
          width: 170px;
          height: 170px;
-         position: relative;
+         position: absolute;
          top: 0px; right: 0px;
-         transform: translate(50,50);
        }
-
-       div:first-child(3)
+       div:nth-child(3)
        {
-         background-color: green;
+         background-color: gray;
          width: 170px;
          height: 170px;
-         position: relative;
+         position: absolute;
          bottom: 0px; left: 0px;
-         transform: translate(-50,50);
        }
-
-       div:first-child(4)
+       div:nth-child(4)
        {
-         background-color: green;
+         background-color: red;
          width: 170px;
          height: 170px;
-         position: relative;
+         position: absolute;
          bottom: 0px; right: 0px;
-         transform: translate(50,-50);
-
-       }
-       div:hover
-       {
-       transform: translate(0,0);
        }
        </style>
+  </head>
+  <body>
+  
+  	<div id="parent">
+		<div>
+		</div>
 
+		<div>
+		</div>
+
+		<div>
+		</div>
+
+		<div>
+		</div>
+	</div>
 
   </body>
 
-<div>
-</div>
 
-<div>
-</div>
-
-<div>
-</div>
-
-<div>
-</div>
-
-<div>
-</div>
 </html>
